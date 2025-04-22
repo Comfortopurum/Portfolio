@@ -33,8 +33,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-      <div className="relative aspect-video overflow-hidden bg-gray-200 dark:bg-gray-700">
+    <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+      <div className="relative aspect-video overflow-hidden bg-gray-700">
         {project.video && (
           <button
             className="absolute inset-0 flex items-center justify-center z-10"
@@ -80,7 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
       <div className="p-6 ">
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
+        <p className="text-gray-300 mb-4">
           {project.description}
         </p>
 
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+              className="px-3 py-1 bg-blue-900 text-blue-200 text-sm rounded-full"
             >
               {tech}
             </span>
@@ -100,7 +100,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             onClick={handleGitHubClick}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+            className="flex items-center text-sm font-medium   text-blue-400 hover:text-blue-300"
           >
             <svg
               className="w-4 h-4 mr-1"
@@ -117,7 +117,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             onClick={handleLiveClick}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+            className="flex items-center text-sm font-medium text-blue-400 hover:text-blue-300"
           >
             <svg
               className="w-4 h-4 mr-1"
@@ -140,11 +140,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
       {showModal && (
         <div className="fixed inset-0 flex  items-center justify-center z-50 bg-black/100 backdrop-blur-[5px] ">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-sm w-full text-center shadow-lg">
-            <h2 className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          <div className="bg-gray-800 p-6 rounded-lg max-w-sm w-full text-center shadow-lg">
+            <h2 className="text-lg font-semibold mb-4 text-gray-200">
               Notice
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-gray-300 mb-6">
               {modalMessage}
             </p>
             <button

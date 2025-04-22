@@ -3,7 +3,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html",
   ],
-  darkMode: 'media', // or 'class' for manual dark mode toggling
+  //darkMode: 'media', // or 'class' for manual dark mode toggling
   theme: {
     extend: {
       fontFamily: {

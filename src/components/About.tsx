@@ -3,7 +3,7 @@ import profile from "../assets/profile.jpeg";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-800">
+    <section id="about" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         
         <div className="flex flex-col md:flex-row items-start gap-12">
@@ -22,8 +22,8 @@ const About: React.FC = () => {
             <p className="text-lg mb-6">
               I'm a passionate Software Engineer with expertise in building
               responsive and modern web applications. With several years of
-              experience in frontend development, I specialize in React, HTML5, CSS3, JavaScript
-              TypeScript, and Tailwind CSS, aswell as no-code web builders such as Webflow and Wix ,
+              experience in frontend development, I specialize in React, JavaScript
+              TypeScript, and Tailwind CSS, aswell as no-code web builders such as Webflow and Wix.
             </p>
             <p className="text-lg mb-6">
               My approach to development focuses on creating clean, maintainable

@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+    <section id="home" className="h-screen flex items-center justify-center bg-gradient-to-br   from-gray-800 to-gray-900">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <h1 
           ref={titleRef}
@@ -21,8 +21,8 @@ const Hero: React.FC = () => {
             Comfort Opurum Chinenye
           </span>
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-          Software Engineer specializing in frontend development with HTML5, JavaScript, React.js, Next,js, TypeScript, and modern UI frameworks. 
+        <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl">
+          Software Engineer specializing in frontend development with JavaScript, React.js, Next.js, TypeScript, and modern UI frameworks. 
          
         </p>
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">

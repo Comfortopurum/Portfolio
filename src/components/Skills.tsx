@@ -7,7 +7,7 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-800">
+    <section id="skills" className="py-20 :bg-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">My Skills</h2>
         
@@ -15,7 +15,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
           {skills.map((skillCategory, index) => (
             <div 
               key={index}
-              className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">
                 {skillCategory.category}

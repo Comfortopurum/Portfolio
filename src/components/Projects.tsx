@@ -23,10 +23,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     : filteredProjects.slice(0, 3);
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6 text-center">My Projects</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           A showcase of my recent work, personal projects, and explorations. Click on a project to learn more about it.
         </p>
         
@@ -35,7 +35,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             className={`px-4 py-2 rounded-full text-sm ${
               filter === 'all' 
                 ? 'bg-blue-600 text-white' 
-                : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
+                : 'bg-gray-700 hover:bg-gray-600'
             }`}
             onClick={() => setFilter('all')}
           >
@@ -48,7 +48,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               className={`px-4 py-2 rounded-full text-sm ${
                 filter === tech 
                   ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
+                  : 'bg-gray-700 hover:bg-gray-600'
               }`}
               onClick={() => setFilter(tech)}
             >
@@ -64,7 +64,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         </div>
         
         {filteredProjects.length === 0 ? (
-          <p className="text-center text-gray-500 dark:text-gray-400 mt-8">
+          <p className="text-center text-gray-400 mt-8">
             No projects found with the selected technology.
           </p>
         ) : filteredProjects.length > 3 && (

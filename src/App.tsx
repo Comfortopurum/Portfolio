@@ -24,7 +24,7 @@ const App: React.FC = () => {
     {
       id: 1,
       title: 'TaskMaster Website',
-      description: 'A user friendly task manager web app that hekps you keep track of your productivity. Designed, developed and deployed the entire web app independently, implementing a clean, responsive UI with features for daily, weekly, and monthly overviews and a seamless user experience across all devices.',
+      description: 'A user friendly task manager web app that helps you keep track of your productivity. Designed, developed and deployed the entire web app independently, implementing a clean, responsive UI with features for daily, weekly, and monthly overviews and a seamless user experience across all devices.',
       image: taskmaster,
       video:taskmastervid,
       technologies: ['React', 'TypeScript','firebase','vercel' ,'Tailwind'],
@@ -86,7 +86,7 @@ const App: React.FC = () => {
   ];
 
   const skills: Skill[] = [
-    { category: 'Tech Stack', items: ['React.js', 'TypeScript', 'JavaScript','Next.js','HTML5', 'CSS3', 'Tailwind CSS', 'Reduxtoolkit'] },
+    { category: 'Tech Stack', items: ['React.js', 'TypeScript', 'JavaScript','Next.js','HTML5', 'CSS3', 'Tailwind CSS', 'Redux Toolkit'] },
     { category: 'Soft Skills', items: ['Analytical Problem Solving', 'Effective Communication', 'Effective Time Management', 'Team Player'] },
     { category: 'Technical Skills', items: [ 'UI/UX Implementation','API Integration ', 'Performance optimization', 'Testing & Debugging', 'CI/CD Pipeline', 'Agile Development', 'Responsive Web Design', 'SEO Optimization'] },
     { category: 'Tools', items: ['Git', 'Netlify', 'Vercel', 'Figma', 'GitHub Action','Jest', 'Chrome Dev Tools', 'VS Code'] }
@@ -94,12 +94,12 @@ const App: React.FC = () => {
 
   const socialLinks: SocialLink[] = [
     { platform: 'GitHub', url: 'https://github.com/Comfortopurum', icon: 'github' },
-    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/comfort-opurum-729956274/', icon: 'linkedin' },
+    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/comfort-opurum', icon: 'linkedin' },
     { platform: 'Twitter', url: 'https://x.com/iam_diva2', icon: 'twitter' }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen bg-gray-900  text-gray-100">
       <Header socialLinks={socialLinks} />
       <main>
         <Hero />
