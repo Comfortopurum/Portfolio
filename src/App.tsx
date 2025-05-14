@@ -17,6 +17,8 @@ import payvesselMV from './assets/videos/payvesselMVideo.mp4';
 import taskmaster from "./assets/taskmaster1.jpg";
 import taskmastervid from "./assets/videos/taskmastervid.mp4";
 import portfolio from "./assets/portfolio.jpg";
+import coc from "./assets/coc consult.jpg";
+import prella from "./assets/prella.jpg";
 
 const App: React.FC = () => {
   
@@ -81,7 +83,27 @@ const App: React.FC = () => {
       githubUrl: '',
       liveUrl: 'https://main.d2hmf6quxn1kp4.amplifyapp.com/auth'
     },
-    
+    {
+      id: 7,
+      title: 'COC Consult',
+      description: 'A bussiness consulting companythat is specialize in delivering tailored consulting services across business development, digital strategy, and operational efficiency.',
+      image: coc,
+      
+      technologies: ['Webflow', 'CMS', 'Typeform', 'CSS', 'SEO'],
+      githubUrl: '',
+      liveUrl: 'https://coc-consulting.webflow.io/'
+    }, 
+
+    {
+      id: 8,
+      title: 'Prella Beauty',
+      description: 'An e-commerce beauty and skincare store in nigeria, offering variety of cusmetics and skincare product',
+      image: prella,
+      
+      technologies: ['Wix', 'CMS', 'Typeform', 'CSS', 'SEO', 'WIX Auth'],
+      githubUrl: '',
+      liveUrl: 'https://coc-consulting.webflow.io/'
+    },
     
   ];
 
@@ -89,7 +111,7 @@ const App: React.FC = () => {
     { category: 'Tech Stack', items: ['React.js', 'TypeScript', 'JavaScript','Next.js','HTML5', 'CSS3', 'Tailwind CSS', 'Redux Toolkit'] },
     { category: 'Soft Skills', items: ['Analytical Problem Solving', 'Effective Communication', 'Effective Time Management', 'Team Player'] },
     { category: 'Technical Skills', items: [ 'UI/UX Implementation','API Integration ', 'Performance optimization', 'Testing & Debugging', 'CI/CD Pipeline', 'Agile Development', 'Responsive Web Design', 'SEO Optimization'] },
-    { category: 'Tools', items: ['Git', 'Netlify', 'Vercel', 'Figma', 'GitHub Action','Jest', 'Chrome Dev Tools', 'VS Code'] }
+    { category: 'Tools', items: ['Git', 'Netlify', 'Vercel', 'Figma', 'GitHub Action','Jest', 'Chrome Dev Tools', 'VS Code', 'Wix', 'Webflow'] }
   ];
 
   const socialLinks: SocialLink[] = [
